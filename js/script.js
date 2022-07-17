@@ -319,14 +319,35 @@
 // console.log(add(12, 4, 11, 48));
 
 
-// Change code below this line
-function addOverNum(...args) {
-  let total = 0;
 
-  for (const arg of args) {
-    total += arg;
+// function addOverNum(...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (arg > args[0])
+//       total += arg;
+//   }
+//   return total;
+
+// }
+// console.log(addOverNum(50, 15, 27));
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+
+
+
+
+function findMatches(arr, ...args) {
+  const matches = [];
+  const array = [...arr, ...args];
+  // for (let elem of array) {
+  //   if (elem === elem) {
+  //     matches.push(elem);
+  //   }
+  // }
+  for (i = 0, i <= array.length, i += 1) {
+    if (i === i)
+      
   }
-
-  return total;
-  // Change code above this line
+  return matches;
 }
+console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
