@@ -336,18 +336,16 @@
 
 
 
-function findMatches(arr, ...args) {
+function findMatches(...args) {
   const matches = [];
-  const array = [...arr, ...args];
-  // for (let elem of array) {
-  //   if (elem === elem) {
-  //     matches.push(elem);
-  //   }
-  // }
-  for (i = 0, i <= array.length, i += 1) {
-    if (i === i)
-      
+  const [first, ...other] = args;
+
+  for (let elem of first) {
+    if (other.includes(elem)) {
+      matches.push(elem);
+    }
   }
+
   return matches;
 }
 console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
