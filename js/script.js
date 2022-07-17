@@ -336,16 +336,26 @@
 
 
 
-function findMatches(...args) {
-  const matches = [];
-  const [first, ...other] = args;
+// function findMatches(arr, ...args) {
+//   const matches = [];
+//   const array = [...arr, ...args];
+ 
+//   console.log(array);
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i] === array[i]) {
+//       matches.push(i);
+//     }
+//   }
 
-  for (let elem of first) {
-    if (other.includes(elem)) {
-      matches.push(elem);
-    }
-  }
 
-  return matches;
-}
-console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+//   // for (let elem of first) {
+//   //   if (other.includes(elem)) {
+//   //     matches.push(elem);
+//   //   }
+//   // }
+
+//   return matches;
+// }
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+
+
