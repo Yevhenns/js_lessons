@@ -474,15 +474,15 @@
 
 
 
-const words = ['ooo', 'aaa', 'sss', 'aaa'];
+// const words = ['ooo', 'aaa', 'sss', 'aaa'];
 
-function unique(arr) {
-  const newArray = [];
-  for (let word of arr) {
-    if (!newArray.includes(word)) {
-      newArray.push(word);      
-    }
-    return newArray;
-  }
-}
-console.log(unique(words));
+// function unique(arr) {
+//   const newArray = [];
+//   for (let word of arr) {
+//     if (!newArray.includes(word)) {
+//       newArray.push(word);      
+//     }
+//     return newArray;
+//   }
+// }
+// console.log(unique(words));
