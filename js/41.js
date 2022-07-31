@@ -182,9 +182,11 @@
 // console.log(totalAveragePlaytimePerGame);
 
 
-const getTotalFriendCount = users =>
-  users.flatMap(user => user.friends);
-  return users;
+// const getTotalFriendCount = users => 
+//   users.map(user => user.friends.length).reduce((first, second) => {
+//     return first + second
+//   }, 0);
+  
   
 
 // console.log([
