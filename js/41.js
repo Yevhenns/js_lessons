@@ -182,7 +182,7 @@
 // console.log(totalAveragePlaytimePerGame);
 
 
-// const getTotalFriendCount = users => 
+// const getTotalFriendCount = users =>
 //   users.map(user => user.friends.length).reduce((first, second) => {
 //     return first + second
 //   }, 0);
@@ -254,3 +254,61 @@
 //     gender: "female"
 //   }
 // ]);
+
+
+
+// class Storage {
+//     constructor(items) {
+//         this.items = items;
+// }
+// getItems() {
+//   return this.items;
+// }
+// addItem(newItem) {
+//   return this.items.push(newItem);
+// }
+//     removeItem(itemToRemove) {
+//     const remove = this.items.indexOf(itemToRemove)
+//   return this.items.splice(remove, 1)
+// }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+
+
+
+class StringBuilder {
+    constructor( value = '' ) {
+    return this.value = value;
+        
+    }
+  getValue() {
+    return this.value;
+  }
+  padEnd(str) {
+    this.value = this.value + str;
+  }
+  padStart(str) {
+    this.value = str + this.value;
+  }
+  padBoth(str) {
+    this.value = str + this.value + str;
+  }
+}
+
+
+const builder = new StringBuilder(".");
+console.log(builder.getValue()); // "."
+builder.padStart("^");
+console.log(builder.getValue()); // "^."
+builder.padEnd("^");
+console.log(builder.getValue()); // "^.^"
+builder.padBoth("=");
+console.log(builder.getValue()); // "=^.^="
